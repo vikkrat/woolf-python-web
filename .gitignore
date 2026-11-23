@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+**/docs/_build/
+*.db
+*.log
+dist/
+hw03/storage/*.json
+!hw03/storage/.gitkeep

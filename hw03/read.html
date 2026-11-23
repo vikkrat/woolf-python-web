@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="uk"><head><meta charset="utf-8"><title>Повідомлення</title>
+<link rel="stylesheet" href="/style.css"></head><body>
+<nav><a href="/">Головна</a> | <a href="/message">Написати повідомлення</a></nav>
+<h1>Збережені повідомлення</h1>
+{% for timestamp, item in messages.items() %}
+<article><h2>{{ item.username }}</h2><time>{{ timestamp }}</time><p>{{ item.message }}</p></article>
+{% else %}<p>Повідомлень ще немає.</p>{% endfor %}
+</body></html>
